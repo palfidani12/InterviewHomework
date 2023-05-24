@@ -1,0 +1,158 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+
+/*Profile page: */
+.profile {
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px;
+  background: black;
+  border: 2px white solid;
+  padding: 25px;
+  width: 25em;
+  box-shadow: -31px -31px 62px #80b351, 31px 31px 62px #adf36d;
+}
+
+.profile-img {
+  width: 19em;
+  margin: 1em 0 0 0;
+  align-self: center;
+  border-radius: 7px;
+  border: #80b351 solid 5px;
+}
+
+.profile-name {
+  margin: 0.5em 0 0.5em 0;
+  text-align: center;
+}
+
+.profile-table {
+  border-top: gray 2px solid;
+  border-bottom: gray 2px solid;
+  margin: 0 1em 1em 1em;
+}
+
+.profile-table td {
+  padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+tr:nth-child(odd) {
+  background: #2e2a2a;
+}
+tr:nth-child(even) {
+  background: black;
+}
+
+.profile-table-left {
+  font-weight: bold;
+}
+
+.profile-back-btn {
+  margin-top: 0.5em;
+  width: 7em;
+  height: 2.5em;
+  align-self: center;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: black;
+  color: #315d08;
+  border: #315d08 1px solid;
+}
+
+.profile-back-btn:hover {
+  background-color: #80b351;
+  color: white;
+}
+
+/*Main page:*/
+
+.main-title {
+  margin: 1em 0 1em 0;
+}
+
+/* Search bar */
+.main-search-bar {
+  width: 80vw;
+  max-width: 1000px;
+  height: 2.8em;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  margin: 0.7em 0 1.5em 0;
+  border: #315d08 3px solid;
+  border-radius: 8px;
+  background-color: darkgray;
+  font-weight: bold;
+  align-self: center;
+}
+
+/* Pagination */
+
+.main-pagination {
+  width: 80vw;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+/* Table */
+
+.table-main {
+  width: 80vw;
+  max-width: 1000px;
+  border-bottom: 4px white solid;
+}
+
+.table-main th {
+  background-color: grey;
+  padding: 1em;
+  color: #15513c;
+}
+
+.table-main td {
+  padding: 1em;
+}
+
+.main-img {
+  width: 7em;
+  border: 1px white solid;
+}
+
+.Alive {
+  color: #adf36d;
+}
+
+.Dead {
+  color: red;
+}
+
+/* Responsivity: */
+
+@media (max-width: 730px) {
+  .main-img {
+    width: 4em;
+  }
+  .table-main {
+    font-size: 0.8em;
+    max-width: 80vw;
+  }
+  .main-title {
+    font-size: 1.3em;
+  }
+  .main-search-bar {
+    font-size: 0.9;
+  }
+  .profile {
+    width: 18em;
+  }
+  .profile-img {
+    width: 13em;
+  }
+  .profile-table {
+    font-size: 0.7em;
+  }
+}
